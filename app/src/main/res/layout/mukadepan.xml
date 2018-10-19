@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user.kakimovie.SplashScreen"
+    android:id="@+id/splash_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/backgroundhomepage"/>
+
+        <TextView
+            android:id="@+id/tvSplash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KAKI MOVIE"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/montserratlight"
+            android:textSize="45dp"
+            android:textAlignment="center"
+            android:layout_marginTop="190dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tonton sampai lebam"
+            android:layout_below="@+id/tvSplash"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserratlight"
+            android:textColor="#ffffff"/>
+
+        <ProgressBar
+            android:id="@+id/progresBar1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="130dp" />
+    </RelativeLayout>
+
+</LinearLayout>

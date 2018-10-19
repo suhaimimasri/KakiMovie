@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="0dp"
+    android:id="@+id/relativeLayout"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TITLE"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/title"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/montserratlight"/>
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating1"
+        android:text="RATING :"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserratlight"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toEndOf="@+id/rating1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="RATING"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserratlight"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATUS"
+        android:layout_below="@+id/title"
+        android:layout_alignBaseline="@+id/rating1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"/>
+    
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@drawable/gradienttransparent"
+    android:layout_below="@id/rating1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/gradienttransparentinverse" />
+
+</RelativeLayout>
